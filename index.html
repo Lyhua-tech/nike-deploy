@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!-- Start Nav Bar -->
+    <!-- upper navbar -->
+    <my-upper-nav></my-upper-nav>
+    <!-- lower navbar -->
+    <my-navbar></my-navbar>
+    <!-- end navbar -->
+    <!-- start sidebar -->
+    <sidebar-nav></sidebar-nav>
+      <!-- Main Section -->
+
+      <!-- Hero Content -->
+      <div class="flex flex-col gap-5 items-center justify-center ">
+        <img src="../assets/icons/airmax-dn.png" alt="" class="w-full md:block hidden">
+        <img src="../assets/images/pictures/image.png" alt="" class="md:hidden block w-[800px]">
+        <section class="flex flex-col justify-center items-center pt-12 gap-3">
+          <p class="font-sans text-[18px] font-medium">Feel the Unreal</p>
+          <h2 class="font-sans font-extrabold md:text-[80px] text-[56px] ">AIR MAX DN</h2>
+          <a href="" target="_blank">The next generation of Air technology is here</a>
+          <button class="rounded-[16px] bg-black text-white py-1.5 px-4">Shop</button>
+        </section>
+      </div>
+
+      <!-- Trending Section -->
+      <div class="font-sans mx-auto max-w-[1600px]">
+        <p class="font-sans text-xl pb-2">Trending</p>
+        <div class="flex gap-3 flex-1 flex-nowrap overflow-x-auto">
+          <div class="max-md:flex-none max-md:w-[350px]">
+            <img src="../assets/images/pictures/nike-basketball.jpeg" alt="" />
+            <p>Rep Your Team in March And Beyond</p>
+          </div>
+          <div class="max-md:flex-none max-md:w-[350px]">
+            <img src="../assets/images/pictures/nike-track.jpeg" alt="" />
+            <p>Race Day Essentials</p>
+          </div>
+          <div class="max-md:flex-none max-md:w-[350px]">
+            <img src="../assets/images/pictures/nike-trend.jpeg" alt="" />
+            <p>Fast Forward. Rewind.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="flex justify-between max-w-[1600px] mx-auto items-center mt-10">
+      <div class="flex flex-col font-sans max-w[1600px] size-full">
+        <p class="font-sans text-xl pb-2">Featured</p>
+        <div class="flex gap-3 flex-1 max-w-[1600px] overflow-x-auto">
+          <div class="relative text-white max-md:w-[500px] flex-none w-[50%]">
+            <img
+              src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1238,c_limit/ed18ec74-c2b4-4c51-bd73-73328019a144/nike-just-do-it.jpg"
+              alt=""
+              class="size-full"
+            />
+            <div class="absolute bottom-3 z-10 left-10 h-[150px]">
+              <p class="mb-3 font-sans text-[18px]">Nike Alphafly 3</p>
+              <p class="mb-3 font-sans text-[18px]">
+                Push Beyond What's Possible
+              </p>
+              <button
+                class="rounded-[20px] bg-white text-black py-2 px-4 font-sans font-medium"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+          <div class="relative text-white max-md:w-[500px] flex-none w-[50%]">
+            <img
+              src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1238,c_limit/1896944c-fbd9-4369-851f-710143f98786/nike-just-do-it.jpg"
+              alt=""
+              class="w-full"
+            />
+            <div class="absolute bottom-8 z-10 left-10 h-[150px]">
+              <p class="mb-3 font-sans text-[18px]">Jordan New Arrivals</p>
+              <p class="mb-3 font-sans text-[18px]">
+                Air Jordan 4 <br />
+                'Vivid Sulfur'
+              </p>
+              <button
+                class="rounded-[20px] bg-white text-black py-2 px-4 font-sans font-medium"
+              >
+                Shop
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Classid Sections -->
+    <div class="flex justify-between max-w-[1600px] mx-auto items-center mt-5">
+      <card-slide data-source="card-data"></card-slide>
+    </div>
+    
+
+    <!-- NIKE Membership sections -->
+    <div class="max-w-[1600px] mx-auto items-center mt-10">
+      <p class="text-[48px] font-[Arial] font-bold pb-4 tracking-[-3px]">
+        NIKE MEMBERSHIP
+      </p>
+      <div class="flex gap-3 overflow-x-auto">
+        <div class="relative flex-none max-sm:w-[350px]">
+          <img
+            src="../assets/images/pictures/nike-just-do-it-sit.jpg"
+            alt=""
+            class="w-[524px]"
+          />
+          <div class="absolute bottom-14 text-white left-10">
+            <p class="text-lg font-sans font-medium">Member Product</p>
+            <p class="text-2xl font-semibold pb-8">Your Exclusive Access</p>
+            <button
+              class="py-1 px-4 bg-white text-black font-sans rounded-2xl text-base font-medium text-center"
+            >
+              Shop
+            </button>
+          </div>
+        </div>
+        <div class="relative flex-none max-sm:w-[350px]">
+          <img
+            src="../assets/images/pictures/nike-just-do-it-yoga.jpg"
+            alt=""
+            class="w-[524px]"
+          />
+          <div class="absolute bottom-14 text-white left-10">
+            <p class="text-lg font-sans font-medium">Sports & Wellness Apps</p>
+            <p class="text-2xl font-semibold pb-8">Movement Where You're At</p>
+            <button
+              class="py-1 px-4 bg-white text-black font-sans rounded-2xl text-base font-medium text-center"
+            >
+              Move
+            </button>
+          </div>
+        </div>
+        <div class="relative flex-none max-sm:w-[350px]">
+          <img
+            src="../assets/images/pictures/nike-just-do-it.jpg"http://127.0.0.1:3000/assets/images/pictures/nike-just-do-it-sit.jpg
+            alt="yoda"
+            class="w-[524px]"
+          />
+          <div class="absolute bottom-14 text-white left-10">
+            <p class="text-lg font-sans font-medium">Nike By You</p>
+            <p class="text-2xl font-semibold pb-8">
+              Your Customization Service
+            </p>
+            <button
+              class="py-1 px-4 bg-white text-black font-sans rounded-2xl text-base font-medium text-center"
+            >
+              Customize
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <my-footer></my-footer>
+    <script src="../assets/js/component.js" type="module"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/index.js"></script>
+</body>
+</html>
